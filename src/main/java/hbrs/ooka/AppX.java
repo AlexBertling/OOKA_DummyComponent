@@ -9,20 +9,23 @@ import hbrs.ooka.annotation.Stop;
  */
 public class AppX
 {
-    private static AppX instance;
+
+    private GUI gui;
 
     public AppX(){
-        System.out.println( "Hello World!" );
+        System.out.println( "Dummy Component initialized..." );
+        gui = new GUI();
     }
 
     @Start
-    public static AppX start(){
-        instance = new AppX();
-        return instance;
+    public void start(){
+        System.out.println( "Dummy Component started..." );
+        gui.startLogging();
     }
 
     @Stop
-    public static void stop(){
-        instance = null;
+    public void stop(){
+        System.out.println( "Dummy Component stopped..." );
+        gui.stopLogging();
     }
 }
