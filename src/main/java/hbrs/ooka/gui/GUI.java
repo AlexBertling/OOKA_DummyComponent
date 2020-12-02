@@ -1,4 +1,4 @@
-package hbrs.ooka;
+package hbrs.ooka.gui;
 
 import javax.swing.*;
 import java.awt.*;

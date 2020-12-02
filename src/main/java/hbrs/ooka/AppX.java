@@ -2,6 +2,7 @@ package hbrs.ooka;
 
 import hbrs.ooka.annotation.Start;
 import hbrs.ooka.annotation.Stop;
+import hbrs.ooka.gui.GUI;
 
 /**
  * Hello world!
