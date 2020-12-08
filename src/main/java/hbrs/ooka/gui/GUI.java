@@ -1,5 +1,9 @@
 package hbrs.ooka.gui;
 
+import hbrs.ooka.AppX;
+import hbrs.ooka.log.Logger;
+import hbrs.ooka.log.LoggerFactory;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Date;
@@ -12,7 +16,7 @@ public class GUI {
     private Timer timer;
 
     public GUI(){
-        System.out.println("GUI from Dummy Component");
+        LoggerFactory.createLogger().sendLog("GUI from Dummy Component");
     }
 
     public void startLogging(){

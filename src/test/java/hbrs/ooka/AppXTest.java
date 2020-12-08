@@ -1,5 +1,8 @@
 package hbrs.ooka;
 
+import hbrs.ooka.log.ConcreteLogger;
+import hbrs.ooka.log.Logger;
+import hbrs.ooka.log.LoggerFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +20,7 @@ public class AppXTest
 
     @Test
     public void start() throws InterruptedException {
+        appX.setLogger(LoggerFactory.createLogger());
         appX.start();
         // let component work some seconds
         Thread.sleep(5000);
