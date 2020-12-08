@@ -11,6 +11,10 @@ public class GUI {
     private JFrame frame;
     private Timer timer;
 
+    public GUI(){
+        System.out.println("GUI from Dummy Component");
+    }
+
     public void startLogging(){
         //Creating the Frame
         frame = new JFrame("Log Frame");
